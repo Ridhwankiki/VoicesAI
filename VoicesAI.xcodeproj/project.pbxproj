@@ -11,6 +11,9 @@
 		52DF2AD82BD8DBD100172E9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2AD72BD8DBD100172E9A /* ContentView.swift */; };
 		52DF2ADA2BD8DBD100172E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DF2AD92BD8DBD100172E9A /* Assets.xcassets */; };
 		52DF2ADD2BD8DBD100172E9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DF2ADC2BD8DBD100172E9A /* Preview Assets.xcassets */; };
+		52DF2AE92BD8DC3200172E9A /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2AE82BD8DC3200172E9A /* Topics.swift */; };
+		52DF2AEB2BD8DCD500172E9A /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2AEA2BD8DCD500172E9A /* StoriesView.swift */; };
+		52DF2AED2BD8DCEA00172E9A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2AEC2BD8DCEA00172E9A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		52DF2AD72BD8DBD100172E9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52DF2AD92BD8DBD100172E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DF2ADC2BD8DBD100172E9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52DF2AE82BD8DC3200172E9A /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
+		52DF2AEA2BD8DCD500172E9A /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		52DF2AEC2BD8DCEA00172E9A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +57,10 @@
 		52DF2AD42BD8DBD100172E9A /* VoicesAI */ = {
 			isa = PBXGroup;
 			children = (
-				52DF2AD52BD8DBD100172E9A /* VoicesAIApp.swift */,
-				52DF2AD72BD8DBD100172E9A /* ContentView.swift */,
-				52DF2AD92BD8DBD100172E9A /* Assets.xcassets */,
+				52DF2AE72BD8DC1E00172E9A /* Model */,
+				52DF2AE32BD8DBD700172E9A /* App */,
+				52DF2AE42BD8DBDC00172E9A /* View */,
+				52DF2AE52BD8DBE100172E9A /* Resources */,
 				52DF2ADB2BD8DBD100172E9A /* Preview Content */,
 			);
 			path = VoicesAI;
@@ -65,6 +72,40 @@
 				52DF2ADC2BD8DBD100172E9A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52DF2AE32BD8DBD700172E9A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52DF2AD52BD8DBD100172E9A /* VoicesAIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		52DF2AE42BD8DBDC00172E9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52DF2AD72BD8DBD100172E9A /* ContentView.swift */,
+				52DF2AEA2BD8DCD500172E9A /* StoriesView.swift */,
+				52DF2AEC2BD8DCEA00172E9A /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52DF2AE52BD8DBE100172E9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52DF2AD92BD8DBD100172E9A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52DF2AE72BD8DC1E00172E9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52DF2AE82BD8DC3200172E9A /* Topics.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DF2AED2BD8DCEA00172E9A /* SettingsView.swift in Sources */,
+				52DF2AEB2BD8DCD500172E9A /* StoriesView.swift in Sources */,
+				52DF2AE92BD8DC3200172E9A /* Topics.swift in Sources */,
 				52DF2AD82BD8DBD100172E9A /* ContentView.swift in Sources */,
 				52DF2AD62BD8DBD100172E9A /* VoicesAIApp.swift in Sources */,
 			);
