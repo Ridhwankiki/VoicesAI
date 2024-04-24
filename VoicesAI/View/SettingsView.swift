@@ -41,7 +41,9 @@ struct SettingsView: View {
                 Section {
                     
                     Link("GET API KEY GIMINI AI", destination: URL(string: signUpGemini)!)
+                        .foregroundStyle(.blue)
                     Link("GET API KEY ELEVEN LABS", destination: URL(string: signUpElevenLabs)!)
+                        .foregroundStyle(.blue)
                     
                     
                 } header: {
@@ -50,13 +52,13 @@ struct SettingsView: View {
                     Text("Sign up to get your own api key via link above")
                 }
             }
-            .navigationTitle("CONFIGURATION")
+            .navigationTitle("Configuration")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
                 Button {
                     
                 } label: {
-                    Text("SAVE")
+                    Text("Save")
                         .padding()
                         .tint(.primary)
                 }
