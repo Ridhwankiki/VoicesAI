@@ -54,7 +54,7 @@ struct StoriesView: View {
 
                 Section {
                     
-                    TextEditor(text: $storyVM.storyText)
+                    TextEditor(text: $storyVM.displayedStoryText)
                         .frame(height: 200)
                         .font(.system(.headline, design: .rounded))
                         .foregroundStyle(.blue)
