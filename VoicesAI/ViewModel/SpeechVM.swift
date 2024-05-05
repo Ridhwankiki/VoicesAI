@@ -20,8 +20,8 @@ class SpeechVM: NSObject, ObservableObject, AVAudioPlayerDelegate {
     // MARK: - GENERATE AND PLAY SPEECH
     func generateAndPlaySpeech(from text: String, apiKey: String) async {
         isLoading = true
-        defer { isLoading = false }
-        defer { isPlaying = false }
+//        defer { isLoading = false }
+//        defer { isPlaying = false }
         errorMessage = nil
         
         elevenLabsService = ElevenLabsService(apiKey: apiKey)

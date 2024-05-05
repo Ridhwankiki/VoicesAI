@@ -27,18 +27,18 @@ class ElevenLabsService {
             "model_id": "eleven_multilingual_v2",
             "text": text,
             "voice_settings": [
-                "stability": 0.5,
-                "similarity_boost": 0.8
+                "stability": 1,
+                "similarity_boost": 1
             ]
         ]
         
-        let requestBody = try JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+        let requestBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
         
         // POST Data
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue(apiKey, forHTTPHeaderField: "xi-api-key")
-//        request.setValue("application/json", forHTTPHeaderField: <#T##String#>)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = requestBody
         
         // Network Request for POST
